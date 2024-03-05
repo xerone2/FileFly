@@ -1,0 +1,9 @@
+pip~=23.3.2
+wheel~=0.40.0
+cryptography~=41.0.7
+lxml~=5.1.0
+tornado~=6.4
+setuptools~=56.0.0
+docutils~=0.20.1
+flask~=3.0.0
+pdf2docx~=0.5.8
