@@ -15,30 +15,57 @@
 		<title>File Converter</title>
 	</head>
 	<body>
-    <div class="w-screen h-screen">
-        <nav class="bg-blue-700 text-white w-full pl-10 py-6 shadow-md shadow-gray-400 font-semibold text-4xl">
-            FileFly
-        </nav>
-        <main class="w-full h-3/4 flex flex-col gap-24 md:gap-20 items-center justify-center">
-            <div class="header text-6xl md:text-8xl font-semibold">File Converter</div>
-            <label for="file-input" aria-label="select files" class="w-3/5 md:w-1/5 px-4 xl:px-6 p-2 bg-blue-100 rounded-lg flex items-center justify-between text-4xl border-blue-500 border-2 cursor-pointer">
-                Select Files<i class="fa-solid fa-paperclip"></i>
-            </label>
-            <form action="/convert-to-document" method="post" enctype="multipart/form-data">
-                <input type="file" name="file" id="file-input-pdf" class="hidden">
-                <button type="submit" class="bg-blue-700 text-white text-2xl px-8 py-4 rounded-lg shadow-md shadow-gray-400 hover:bg-opacity-80 active:shadow-none select-none cursor-pointer" aria-label="Convert document to PDF">
-                    Convert to DOCX
-                </button>
-            </form>
-            <form action="/convert-to-pdf" method="post" enctype="multipart/form-data">
-                <input type="file" name="file" id="file-input-doc" class="hidden">
-                <button type="submit" class="bg-blue-700 text-white text-2xl px-8 py-4 rounded-lg shadow-md shadow-gray-400 hover:bg-opacity-80 active:shadow-none select-none cursor-pointer" aria-label="Convert document to PDF">
-                    Convert to PDF
-                </button>
-            </form>
-        </main>
-    </div>
-</body>
-
-
+		<div class="w-screen h-screen">
+			<nav
+				class="bg-blue-700 text-white w-full pl-10 py-6 shadow-md shadow-gray-400 font-semibold text-4xl"
+			>
+				FileFly
+			</nav>
+			<main
+				class="w-full h-3/4 relative top-16 flex flex-col gap-12 md:gap-20 items-center justify-center"
+			>
+				<h1
+					class="header text-6xl md:text-8xl font-semibold"
+					aria-label="heading"
+				>
+					File Converter
+				</h1>
+				<label
+					for="file-input-doc"
+					aria-label="select files"
+					class="w-64 px-4 p-2 bg-blue-100 rounded-lg flex items-center justify-between text-4xl border-blue-500 border-2 cursor-pointer"
+				>
+					Select Files<i class="fa-solid fa-paperclip"></i>
+				</label>
+				<form
+					action="/convert-to-document"
+					method="post"
+					enctype="multipart/form-data"
+				>
+					<!-- <input type="file" name="file" id="file-input-pdf" class="hidden"> -->
+					<button
+						type="submit"
+						class="bg-blue-700 text-white text-2xl px-8 py-4 rounded-lg shadow-md shadow-gray-400 hover:bg-opacity-80 active:shadow-none select-none cursor-pointer"
+						aria-label="Convert document to PDF"
+					>
+						Convert to DOCX
+					</button>
+				</form>
+				<form
+					action="/convert-to-pdf"
+					method="post"
+					enctype="multipart/form-data"
+				>
+					<!-- <input type="file" name="file" id="file-input-doc" class="hidden"> -->
+					<button
+						type="submit"
+						class="bg-blue-700 text-white text-2xl px-8 py-4 rounded-lg shadow-md shadow-gray-400 hover:bg-opacity-80 active:shadow-none select-none cursor-pointer"
+						aria-label="Convert document to PDF"
+					>
+						Convert to PDF
+					</button>
+				</form>
+			</main>
+		</div>
+	</body>
 </html>

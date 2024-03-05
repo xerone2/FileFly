@@ -13,7 +13,8 @@ Flask File Converter is a web application built with Flask that allows users to 
 
 - Python
 - Flask
-- HTML/CSS
+- HTML
+- Tailwind
 - JavaScript
 - PDF2DOCX library (for document conversion)
 - Other dependencies listed in `requirements.txt`
@@ -26,7 +27,7 @@ Flask File Converter is a web application built with Flask that allows users to 
 
 2. Navigate to the project directory:
 
-   cd flask-file-converter
+   cd FileFly
 
 3. Install dependencies:
 
@@ -35,7 +36,6 @@ Flask File Converter is a web application built with Flask that allows users to 
 4. Run the Flask application:
 
    flask run
-  
 
 5. Open your web browser and navigate to `http://localhost:5000` to access the application.
 
@@ -45,7 +45,6 @@ Flask File Converter is a web application built with Flask that allows users to 
 2. Choose the desired conversion option (e.g., "Convert to PDF" or "Convert to Document").
 3. Wait for the conversion process to complete.
 4. Download the converted file from the provided link.
-
 
 ## Contributing
 
