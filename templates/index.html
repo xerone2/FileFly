@@ -13,6 +13,7 @@
 		<script src="https://cdn.tailwindcss.com"></script>
 		<script src="./tailwind.config.js"></script>
 		<title>File Converter</title>
+
 	</head>
 	<body>
     <div class="w-screen h-screen">
@@ -21,18 +22,26 @@
         </nav>
         <main class="w-full h-3/4 flex flex-col gap-24 md:gap-20 items-center justify-center">
             <div class="header text-6xl md:text-8xl font-semibold">File Converter</div>
-            <label for="file-input" aria-label="select files" class="w-3/5 md:w-1/5 px-4 xl:px-6 p-2 bg-blue-100 rounded-lg flex items-center justify-between text-4xl border-blue-500 border-2 cursor-pointer">
+            <label for="file-input"
+                   aria-label="select files"
+                   class="w-3/5 md:w-1/5 px-4 xl:px-6 p-2 bg-blue-100 rounded-lg flex items-center justify-between
+                   text-4xl border-blue-500 border-2 cursor-pointer">
                 Select Files<i class="fa-solid fa-paperclip"></i>
             </label>
             <form action="/convert-to-document" method="post" enctype="multipart/form-data">
-                <input type="file" name="file" id="file-input-pdf" class="hidden">
-                <button type="submit" class="bg-blue-700 text-white text-2xl px-8 py-4 rounded-lg shadow-md shadow-gray-400 hover:bg-opacity-80 active:shadow-none select-none cursor-pointer" aria-label="Convert document to PDF">
+                <input type="file" name="file" id="file-input" class="hidden" accept=".pdf">
+                <button type="submit" class="bg-blue-700 text-white text-2xl px-8 py-4 rounded-lg shadow-md
+                        shadow-gray-400 hover:bg-opacity-80 active:shadow-none select-none cursor-pointer"
+                        aria-label="Convert document to PDF"
+                        >
                     Convert to DOCX
                 </button>
             </form>
             <form action="/convert-to-pdf" method="post" enctype="multipart/form-data">
-                <input type="file" name="file" id="file-input-doc" class="hidden">
-                <button type="submit" class="bg-blue-700 text-white text-2xl px-8 py-4 rounded-lg shadow-md shadow-gray-400 hover:bg-opacity-80 active:shadow-none select-none cursor-pointer" aria-label="Convert document to PDF">
+                <input type="file" name="file" id="file-input-x" class="hidden" accept=".docx">
+                <button type="submit" class="bg-blue-700 text-white text-2xl px-8 py-4 rounded-lg shadow-md
+                    shadow-gray-400 hover:bg-opacity-80 active:shadow-none select-none cursor-pointer"
+                        aria-label="Convert document to PDF">
                     Convert to PDF
                 </button>
             </form>
